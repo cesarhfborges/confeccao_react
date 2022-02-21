@@ -1,13 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, View, ScrollView} from 'react-native';
-import {
-  Appbar,
-  DataTable,
-  Card,
-  Title,
-  Paragraph,
-  Button,
-} from 'react-native-paper';
+import {Appbar, DataTable, Card} from 'react-native-paper';
 
 const listaClientes = [
   {
@@ -29,7 +22,7 @@ const ClientesLista = ({navigation}) => (
       />
       <Appbar.Content title="Clientes" />
       <Appbar.Action icon="magnify" onPress={() => {}} />
-      <Appbar.Action icon="label" onPress={() => {}} />
+      <Appbar.Action icon="plus" onPress={() => {}} />
     </Appbar.Header>
     <ScrollView>
       <View style={styles.content}>

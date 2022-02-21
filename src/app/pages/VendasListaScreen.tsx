@@ -29,7 +29,7 @@ const VendasListaScreen = ({navigation}) => (
       />
       <Appbar.Content title="Vendas" />
       <Appbar.Action icon="magnify" onPress={() => {}} />
-      <Appbar.Action icon="label" onPress={() => {}} />
+      <Appbar.Action icon="plus" onPress={() => {}} />
     </Appbar.Header>
     <ScrollView>
       <View style={styles.content}>
