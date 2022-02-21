@@ -21,13 +21,13 @@ const listaClientes = [
 ];
 
 // @ts-ignore
-const ClientesLista = ({navigation}) => (
+const VendasListaScreen = ({navigation}) => (
   <SafeAreaView>
     <Appbar.Header>
       <Appbar.BackAction
         onPress={() => navigation.navigate('Root', {screen: 'Home'})}
       />
-      <Appbar.Content title="Clientes" />
+      <Appbar.Content title="Vendas" />
       <Appbar.Action icon="magnify" onPress={() => {}} />
       <Appbar.Action icon="label" onPress={() => {}} />
     </Appbar.Header>
@@ -67,4 +67,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ClientesLista;
+export default VendasListaScreen;
