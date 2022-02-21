@@ -1,40 +1,13 @@
-/**
- * @format
- */
-
 import 'react-native-gesture-handler';
-import {AppRegistry, View} from 'react-native';
-import * as React from 'react';
+import {AppRegistry} from 'react-native';
+import React from 'react';
 import {name as appName} from './app.json';
-import {
-  Provider as PaperProvider,
-  DarkTheme,
-  DefaultTheme,
-  Text,
-} from 'react-native-paper';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {Provider as PaperProvider} from 'react-native-paper';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import HomeScreen from './src/app/pages/HomeScreen';
-import Header from './src/app/components/Header';
-import ClientesLista from './src/app/pages/ClientesListaScreen';
-
-const theme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors,
-    customColor: '#BADA55',
-  },
-  fonts: {
-    ...DefaultTheme.fonts,
-    superLight: {...DefaultTheme.fonts.light},
-  },
-  userDefinedThemeProperty: '',
-  animation: {
-    ...DefaultTheme.animation,
-    customProperty: 1,
-  },
-};
+import Routes from './src/app/Routes';
+import LoginScreen from './src/app/pages/LoginScreen';
+import theme from './src/assets/theme';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,16 +15,18 @@ const App = () => {
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+          initialRouteName="Root"
+          screenOptions={{headerShown: false}}>
           <Stack.Screen
-            options={{header: Header}}
-            name="Home"
-            component={HomeScreen}
+            name="Root"
+            options={{title: 'Home'}}
+            component={Routes}
           />
           <Stack.Screen
-            options={{header: Header}}
-            name="Clientes"
-            component={ClientesLista}
+            name="Login"
+            options={{title: 'Login'}}
+            component={LoginScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>
