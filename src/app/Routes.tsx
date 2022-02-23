@@ -7,7 +7,7 @@ import {IconButton} from 'react-native-paper';
 import theme from '../assets/theme';
 import {StatusBar} from 'react-native';
 import VendasListaScreen from './pages/VendasListaScreen';
-import ClientesEditarScreen from "./pages/ClientesEditarScreen";
+import ClientesEditarScreen from './pages/ClientesEditarScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -44,7 +44,13 @@ const Routes = () => (
           tabBarIcon: () => <IconButton icon="home" size={20} />,
         }}
       />
-      <Stack.Screen name={'EditarClientes'} component={ClientesEditarScreen} />
+      <Tab.Screen
+        name="EditarClientes"
+        component={ClientesEditarScreen}
+        options={{
+          tabBarIcon: () => <IconButton icon="home" size={20} />,
+        }}
+      />
       <Tab.Screen
         name="Vendas"
         component={VendasListaScreen}

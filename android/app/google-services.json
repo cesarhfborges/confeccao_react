@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603473027408",
+    "firebase_url": "https://confeccao-9dfef-default-rtdb.firebaseio.com",
+    "project_id": "confeccao-9dfef",
+    "storage_bucket": "confeccao-9dfef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603473027408:android:343f7de8c1b832f4988c55",
+        "android_client_info": {
+          "package_name": "com.confeccao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603473027408-jf10dq6a5gvg0kqlb1g97skfajn26p54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.confeccao",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "603473027408-6pr64n3auknos088vlslvj4q108v3obk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQj91zLAayTJ0fnGrEN5sHeaKm8pCDspY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603473027408-6pr64n3auknos088vlslvj4q108v3obk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
